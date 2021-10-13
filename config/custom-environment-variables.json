@@ -1,0 +1,8 @@
+{
+    "database": {
+        "mongoURI": "DB_MONGOURI"
+    },
+    "server": {
+        "port": "5000"
+    }
+}
