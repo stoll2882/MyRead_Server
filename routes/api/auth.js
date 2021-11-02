@@ -19,7 +19,7 @@ router.get('/', auth, async (req, res) => {
       res.json(user);
     } catch (err) {
       console.error(err.message);
-      // res.status(500).send('Server Error');
+      res.status(500).send('Server Error');
     }
   });
 
@@ -68,10 +68,10 @@ router.post(
           { expiresIn: '5 days' },
           (err, token) => {
             if (err) throw err;
-            res.json({ token });
+            res.json({ token }).end();
+            console.log(res);
           }
         );
-        console.log(json.stringify(user));
       } catch (err) {
         console.error(err.message);
         res.status(500).send('Server error');

@@ -1,8 +1,13 @@
 {
     "database": {
-        "mongoURI": "DB_MONGOURI"
+        "mongoURI": "MONGOURI"
     },
     "server": {
-        "port": "5000"
+        "port": "PORT"
+    },
+    "twilio": {
+        "sid": "TWILIO_SID",
+        "token": "TWILIO_TOKEN",
+        "from": "TWILION_FROM"
     }
 }
